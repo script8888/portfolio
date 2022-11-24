@@ -1,5 +1,6 @@
 .HeadSection {
   background-image: url(../public/img/homeBg.png);
+  background-position: center;
 }
 
 .head_details {
