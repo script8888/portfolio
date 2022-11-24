@@ -14,8 +14,29 @@
   font-weight: 900;
   font-size: 6rem;
   line-height: 135px;
-  color: #ededed;
+  display: flex;
   text-align: center;
+  position: relative;
+  justify-content: center;
+}
+
+.head_name_MainText {
+  font-size: 6rem;
+  line-height: 135px;
+  color: #ededed;
+  z-index: 1;
+}
+
+.head_name_OutlineText {
+  position: absolute;
+  top: -31px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 0;
+  color: transparent;
+  font-size: 6.5rem;
+  -webkit-text-stroke: 1px #717171;
 }
 
 .head_desc {
@@ -66,6 +87,7 @@
 }
 
 .arrowDownDiv svg {
+  cursor: pointer;
   position: absolute;
   top: -1em;
   left: 0;
