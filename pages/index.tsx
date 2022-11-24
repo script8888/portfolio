@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Nav from "../Components/nav/Nav";
-import { ArrowDown } from "../Components/svg/Svg";
+import HeadSection from "../Components/HeadSection/HeadSection";
+import Projects from "../Components/Projects/Projects";
 
 export default function Home() {
   return (
@@ -14,26 +13,8 @@ export default function Home() {
       </Head>
 
       <div className="parentContainer">
-        <section className={styles.HeadSection}>
-          <Nav />
-
-          <div className={styles.head_details}>
-            <h3 className={styles.head_name}>ENOCH FABIYI</h3>
-            <p className={styles.head_desc}>
-              I’m a web developer with 3years+ of experience utilizing several
-              programming tools while delivering quality to clients. I possess
-              expert knowledge in frontend and web3 development.
-            </p>
-
-            <div className={styles.letsTalkDiv}>
-              <p>I’m currently accepting oppotunities,</p>
-              <a href="mailto:ayomikun204@gmail.com">LET’S TALK.</a>
-            </div>
-            <div className={styles.arrowDownDiv}>
-              <ArrowDown />
-            </div>
-          </div>
-        </section>
+        <HeadSection styles={styles} />
+        <Projects />
       </div>
     </div>
   );
