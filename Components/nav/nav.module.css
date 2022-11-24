@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+}
+
+.logoName {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.642rem;
+  line-height: 51px;
+  color: #ededed;
+}
+
+.navListParent {
+  display: flex;
+  align-items: center;
+}
+
+.navListParent li {
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.16rem;
+  line-height: 23px;
+  color: #8c8c8c;
+  margin-right: 1.7em;
+}
+
+.navListParent li:last-of-type {
+  margin-right: 0;
+}
+
+/* 
+font-family: 'Aleo', serif;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Source Code Pro', monospace; 
+*/
