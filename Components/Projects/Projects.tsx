@@ -9,7 +9,9 @@ function Projects() {
         <hr className={styles.projects_headingHR} />
       </div>
 
-      <div className={styles.projects_Grid}></div>
+      <div className={styles.projects_Grid}>
+        <div></div>
+      </div>
     </section>
   );
 }
