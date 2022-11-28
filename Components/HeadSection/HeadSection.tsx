@@ -1,8 +1,9 @@
 import React from "react";
 import Nav from "../nav/Nav";
 import { ArrowDown } from "../svg/Svg";
+import styles from "./headSection.module.css";
 
-function HeadSection({ styles }: any) {
+function HeadSection() {
   return (
     <section className={styles.HeadSection}>
       <Nav />
