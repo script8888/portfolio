@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import HeadSection from "../Components/HeadSection/HeadSection";
 import Projects from "../Components/Projects/Projects";
+import About from "../Components/About/About";
 
 export default function Home() {
   return (
@@ -13,8 +14,9 @@ export default function Home() {
       </Head>
 
       <div className="parentContainer">
-        <HeadSection styles={styles} />
+        <HeadSection />
         <Projects />
+        <About />
       </div>
     </div>
   );
