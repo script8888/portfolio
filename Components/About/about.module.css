@@ -1,0 +1,44 @@
+.aboutSection {
+  margin-top: 10em;
+}
+
+.h3Hr {
+  width: 90%;
+}
+
+.aboutMeFlex {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1.5em;
+}
+
+.aboutMeFlex > div:first-of-type {
+  width: 45%;
+}
+
+.aboutMeFlex > div:first-of-type p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 143%;
+  letter-spacing: 0.01em;
+  color: #c3c3c3;
+}
+
+.enochParent {
+  position: relative;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enochGrid {
+  position: absolute;
+  width: 27rem;
+  z-index: 0;
+}
+
+.enochImg {
+  width: 18rem;
+  z-index: 1;
+}
