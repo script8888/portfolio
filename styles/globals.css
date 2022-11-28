@@ -43,6 +43,31 @@ input {
   padding-bottom: 5em;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingH3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 143%;
+  color: #c3c3c3;
+}
+
+.headingHR {
+  opacity: 0.2;
+  background: linear-gradient(
+    to right,
+    rgba(195, 195, 195, 1),
+    rgba(255, 255, 255, 0)
+  );
+  height: 1px;
+  border: 0;
+}
+
 /* 
 font-family: 'Aleo', serif;
 font-family: 'Public Sans', sans-serif;
