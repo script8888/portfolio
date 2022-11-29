@@ -1,6 +1,15 @@
 import React from "react";
 import { SimpleGrid } from "@chakra-ui/react";
 import styles from "./about.module.css";
+import {
+  NextJsIco,
+  JavascriptIco,
+  TypeScriptIco,
+  SolidityIco,
+  ReactJsIco,
+  FireBaseIco,
+  ReduxIco,
+} from "../svg/Svg";
 
 function About() {
   return (
@@ -36,10 +45,36 @@ function About() {
             Here are a few technologies I’ve been working with recently:
           </p>
 
-          <SimpleGrid
-            columns={{ sm: 3, md: 3, lg: 3 }}
-            spacing={7}
-          ></SimpleGrid>
+          <SimpleGrid columns={{ sm: 3, md: 3, lg: 3 }} spacing={3}>
+            <div className={styles.languageDiv}>
+              <NextJsIco className={styles.nextIco} />
+              <p>Next Js</p>
+            </div>
+            <div className={styles.languageDiv}>
+              <TypeScriptIco />
+              <p>TypeScript</p>
+            </div>
+            <div className={styles.languageDiv}>
+              <ReduxIco />
+              <p>Redux</p>
+            </div>
+            <div className={styles.languageDiv}>
+              <ReactJsIco />
+              <p>React Js</p>
+            </div>
+            <div className={styles.languageDiv}>
+              <JavascriptIco />
+              <p>JavaScript</p>
+            </div>
+            <div className={styles.languageDiv}>
+              <FireBaseIco />
+              <p>Firebase</p>
+            </div>
+            <div className={styles.languageDiv}>
+              <SolidityIco className={styles.solidityIco} />
+              <p>Solidity</p>
+            </div>
+          </SimpleGrid>
         </div>
         <div className={styles.enochParent}>
           <img
