@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import HeadSection from "../Components/HeadSection/HeadSection";
 import Projects from "../Components/Projects/Projects";
 import About from "../Components/About/About";
+import ContactMe from "../Components/ContactMe/ContactMe";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <HeadSection />
         <Projects />
         <About />
+        <ContactMe />
       </div>
     </div>
   );
