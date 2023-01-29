@@ -1,15 +1,14 @@
 import React from "react";
 import { SimpleGrid } from "@chakra-ui/react";
 import styles from "./about.module.css";
-import {
-  NextJsIco,
-  JavascriptIco,
-  TypeScriptIco,
-  SolidityIco,
-  ReactJsIco,
-  FireBaseIco,
-  ReduxIco,
-} from "../svg/Svg";
+import { skills } from "./Skills";
+
+const SkillsComp = (props: any) => (
+  <div key={props.id} className={styles.languageDiv}>
+    <props.icon className={props.class ? styles[props.class] : ""} />
+    <p>{props.name}</p>
+  </div>
+);
 
 function About() {
   return (
@@ -46,34 +45,7 @@ function About() {
           </p>
 
           <SimpleGrid columns={{ sm: 3, md: 3, lg: 3 }} spacing={3}>
-            <div className={styles.languageDiv}>
-              <NextJsIco className={styles.nextIco} />
-              <p>Next Js</p>
-            </div>
-            <div className={styles.languageDiv}>
-              <TypeScriptIco />
-              <p>TypeScript</p>
-            </div>
-            <div className={styles.languageDiv}>
-              <ReduxIco />
-              <p>Redux</p>
-            </div>
-            <div className={styles.languageDiv}>
-              <ReactJsIco />
-              <p>React Js</p>
-            </div>
-            <div className={styles.languageDiv}>
-              <JavascriptIco />
-              <p>JavaScript</p>
-            </div>
-            <div className={styles.languageDiv}>
-              <FireBaseIco />
-              <p>Firebase</p>
-            </div>
-            <div className={styles.languageDiv}>
-              <SolidityIco className={styles.solidityIco} />
-              <p>Solidity</p>
-            </div>
+            {skills.map(SkillsComp)}
           </SimpleGrid>
         </div>
         <div className={styles.enochParent}>
