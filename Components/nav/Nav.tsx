@@ -1,5 +1,5 @@
 import React from "react";
-import { GitHub } from "../svg/Svg";
+import GitHub from "../svg/GitHub";
 import styles from "./nav.module.css";
 
 function Nav() {

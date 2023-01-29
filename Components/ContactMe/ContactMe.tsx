@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowSide } from "../svg/Svg";
+import ArrowSide from "../svg/ArrowSide";
 import styles from "./contactme.module.css";
 
 function ContactMe() {
@@ -34,7 +34,7 @@ function ContactMe() {
             target="_blank"
             rel="noreferrer"
           >
-           <span>Email</span>
+            <span>Email</span>
           </a>
         </div>
       </div>
