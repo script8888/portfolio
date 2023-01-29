@@ -5,7 +5,7 @@ import { projectDetails } from "./ProjectDetails";
 
 const Project = (props: any) => {
   return (
-    <div className={styles.project}>
+    <div key={props.id} className={styles.project}>
       <img src={props.img} alt="1" />
       <div className={styles.hoverDetails}>
         <h3>{props.title}</h3>
