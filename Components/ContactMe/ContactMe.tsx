@@ -1,6 +1,21 @@
+import { ArrowSide } from "../svg/ArrowSide";
 import React from "react";
-import ArrowSide from "../svg/ArrowSide";
 import styles from "./contactme.module.css";
+
+type LinksProps = {
+  href: string;
+  name: string;
+};
+
+const Links: React.FC<LinksProps> = (props) => {
+  return (
+    <div className={styles.linksDiv}>
+      <a href={props.href} target="_blank" rel="noreferrer">
+        <span>{props.name}</span> <ArrowSide />
+      </a>
+    </div>
+  );
+};
 
 function ContactMe() {
   return (
@@ -8,35 +23,12 @@ function ContactMe() {
       <h2>Contact Me</h2>
 
       <div className={styles.linksParent}>
-        <div className={styles.linksDiv}>
-          <a
-            href="https://twitter.com/frontend_script"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Twitter</span> <ArrowSide />
-          </a>
-        </div>
-
-        <div className={styles.linksDiv}>
-          <a
-            href="https://linkedin.com/in/enoch-fabiyi-bb04331a5/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>LinkedIn</span>
-          </a>
-        </div>
-
-        <div className={styles.linksDiv}>
-          <a
-            href="mailto:ayomikun204@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Email</span>
-          </a>
-        </div>
+        <Links href="https://twitter.com/frontend_script" name="Twitter" />
+        <Links
+          href="https://linkedin.com/in/enoch-fabiyi-bb04331a5/"
+          name="LinkedIn"
+        />
+        <Links href="mailto:ayomikun204@gmail.com" name="Email" />
       </div>
       <footer className={styles.footer}>UI by David</footer>
     </section>
