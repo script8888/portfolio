@@ -21,24 +21,25 @@ function About() {
       <div className={styles.aboutMeFlex}>
         <div>
           <p>
-            Hello! My name is Enoch and I enjoy developing responsive and
-            functional websites. Frontend development has been my main focus for
-            some years now, it all started back in 2018 when I was playing
-            around Blogger, trying to figure out how blogs were built. And some
-            months later, I began learning HTML/CSS.
+            Hi there! I&apos;m Enoch and I love creating responsive and
+            user-friendly websites. I&apos;ve been focusing on frontend
+            development for a few years now. It all started back in 2018 when I
+            was tinkering with Blogger and trying to understand how blogs were
+            made. That curiosity led me to learn HTML/CSS and I&apos;ve been
+            hooked ever since!
             <br />
             <br />
-            Fast-forward to today, I have built website in the esports
-            tournaments sector, and experience in managing lots of varied tasks,
-            collaborating with others as part of a team, and effective
-            communication
-            <br />
+            Fast forward to today, I&apos;ve built websites for the freelance
+            marketplace, Web3, and esports sectors. I&apos;ve gained experience in
+            juggling lots of different tasks, working effectively with others as
+            part of a team, and communicating efficiently.
+            {/* <br />
             <br />
             The constant change in the techonologies used in frontend
             development is something I find joy in as I am always looking to
             improve and learn cool stuffs. Which is why I tasked myself with
             diving into Web3. And building smart contracts with solidity and
-            integrating it to the frontend has been really fun.
+            integrating it to the frontend has been really fun. */}
             <br />
             <br />
             Here are a few technologies I’ve been working with recently:
