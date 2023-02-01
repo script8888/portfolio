@@ -5,6 +5,7 @@ import JavascriptIco from "../svg/JavascriptIco";
 import ReduxIco from "../svg/ReduxIco";
 import FireBaseIco from "../svg/FireBaseIco";
 import SolidityIco from "../svg/SolidityIco";
+import MongoDbIco from "../svg/MongoDbIco";
 import * as React from "react";
 
 type ObjectField = {
@@ -22,23 +23,6 @@ export const skills: ObjectField[] = [
     class: `nextIco`,
   },
   {
-    id: 2,
-    icon: (props: React.SVGProps<SVGSVGElement>) => (
-      <TypeScriptIco {...props} />
-    ),
-    name: "TypeScript",
-  },
-  {
-    id: 3,
-    icon: (props: React.SVGProps<SVGSVGElement>) => <ReduxIco {...props} />,
-    name: "Redux",
-  },
-  {
-    id: 4,
-    icon: (props: React.SVGProps<SVGSVGElement>) => <ReactJsIco {...props} />,
-    name: "React Js",
-  },
-  {
     id: 5,
     icon: (props: React.SVGProps<SVGSVGElement>) => (
       <JavascriptIco {...props} />
@@ -51,9 +35,31 @@ export const skills: ObjectField[] = [
     name: "Firebase",
   },
   {
+    id: 4,
+    icon: (props: React.SVGProps<SVGSVGElement>) => <ReactJsIco {...props} />,
+    name: "React Js",
+  },
+  {
+    id: 3,
+    icon: (props: React.SVGProps<SVGSVGElement>) => <ReduxIco {...props} />,
+    name: "Redux",
+  },
+  {
     id: 7,
     icon: (props: React.SVGProps<SVGSVGElement>) => <SolidityIco {...props} />,
     name: "Solidity",
     class: `solidityIco`,
+  },
+  {
+    id: 2,
+    icon: (props: React.SVGProps<SVGSVGElement>) => (
+      <TypeScriptIco {...props} />
+    ),
+    name: "TypeScript",
+  },
+  {
+    id: 8,
+    icon: (props: React.SVGProps<SVGSVGElement>) => <MongoDbIco {...props} />,
+    name: "MongoDB",
   },
 ];
