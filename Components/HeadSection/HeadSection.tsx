@@ -14,9 +14,9 @@ function HeadSection() {
           <span className={styles.head_name_OutlineText}>ENOCH FABIYI</span>
         </h3>
         <p className={styles.head_desc}>
-          I’m a web developer with 3years+ of experience utilizing several
-          programming tools while delivering quality to clients. I possess
-          knowledge in frontend and web3 development.
+          Experienced Frontend Web Developer with 3+ years of expertise in
+          building dynamic and user-friendly web applications using
+          NextJs/ReactJs, JavaScript, MongoDB.
         </p>
 
         <div className={styles.letsTalkDiv}>
