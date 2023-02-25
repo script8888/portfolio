@@ -5,7 +5,7 @@ import { skills } from "./Skills";
 
 const SkillsComp = (props: any) => (
   <div key={props.id} className={styles.languageDiv}>
-    <props.icon className={props.class ? styles[props.class] : ""} />
+    <props.icon className={props.class ? props.class : ""} />
     <p>{props.name}</p>
   </div>
 );
@@ -30,9 +30,9 @@ function About() {
             <br />
             <br />
             Fast forward to today, I&apos;ve built websites for the freelance
-            marketplace, Web3, and esports sectors. I&apos;ve gained experience in
-            juggling lots of different tasks, working effectively with others as
-            part of a team, and communicating efficiently.
+            marketplace, Web3, and esports sectors. I&apos;ve gained experience
+            in juggling lots of different tasks, working effectively with others
+            as part of a team, and communicating efficiently.
             {/* <br />
             <br />
             The constant change in the techonologies used in frontend

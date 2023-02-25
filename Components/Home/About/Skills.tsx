@@ -1,11 +1,11 @@
-import ReactJsIco from "../svg/ReactJsIco";
-import NextJsIco from "../svg/NextJsIco";
-import TypeScriptIco from "../svg/TypeScriptIco";
-import JavascriptIco from "../svg/JavascriptIco";
-import ReduxIco from "../svg/ReduxIco";
-import FireBaseIco from "../svg/FireBaseIco";
-import SolidityIco from "../svg/SolidityIco";
-import MongoDbIco from "../svg/MongoDbIco";
+import ReactJsIco from "../../svg/ReactJsIco";
+import NextJsIco from "../../svg/NextJsIco";
+import TypeScriptIco from "../../svg/TypeScriptIco";
+import JavascriptIco from "../../svg/JavascriptIco";
+import ReduxIco from "../../svg/ReduxIco";
+import FireBaseIco from "../../svg/FireBaseIco";
+import SolidityIco from "../../svg/SolidityIco";
+import MongoDbIco from "../../svg/MongoDbIco";
 import * as React from "react";
 
 type ObjectField = {

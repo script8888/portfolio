@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../nav/Nav";
-import ArrowDown from "../svg/ArrowDown";
+import Nav from "../../nav/Nav";
+import ArrowDown from "../../svg/ArrowDown";
 import styles from "./headSection.module.css";
 
 function HeadSection() {

@@ -1,4 +1,4 @@
-import { ArrowSide } from "../svg/ArrowSide";
+import { ArrowSide } from "../../svg/ArrowSide";
 import React from "react";
 import styles from "./contactme.module.css";
 
