@@ -20,7 +20,7 @@ function Projects() {
     <section className={styles.projectsSection}>
       <div className="heading">
         <h3 className="headingH3">Some Things I’ve Built</h3>
-        <hr className={`${styles.h3Hr} headingHR`} />
+        <hr className={`headingHR`} />
       </div>
 
       <div className={styles.projects_GridParent}>

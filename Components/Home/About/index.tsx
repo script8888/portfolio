@@ -15,7 +15,7 @@ function About() {
     <section className={styles.aboutSection}>
       <div className="heading">
         <h3 className="headingH3">About Me</h3>
-        <hr className={`${styles.h3Hr} headingHR`} />
+        <hr className={`headingHR`} />
       </div>
 
       <div className={styles.aboutMeFlex}>
