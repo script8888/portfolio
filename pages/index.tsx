@@ -1,9 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import HeadSection from "../Components/HeadSection/HeadSection";
-import Projects from "../Components/Projects/Projects";
-import About from "../Components/About/About";
-import ContactMe from "../Components/ContactMe/ContactMe";
+import HeadSection from "../Components/Home/HeadSection";
+import Projects from "../Components/Home/Projects";
+import About from "../Components/Home/About/";
+import ContactMe from "../Components/Home/ContactMe";
 
 export default function Home() {
   return (
