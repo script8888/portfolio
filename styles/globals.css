@@ -43,16 +43,16 @@ h2 {
   width: 100%;
   max-width: 69em;
   margin: 0 auto;
-  padding: 0 33px;
+  padding: 0 33px 20px;
 }
 
 .heading {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .headingH3 {
+  margin-right: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 1.4rem;
@@ -78,7 +78,6 @@ h2 {
 .solidityIco path {
   fill: #bfbfbf;
 }
-
 
 /* 
 font-family: 'Aleo', serif;
