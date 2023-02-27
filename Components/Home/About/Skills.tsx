@@ -7,6 +7,7 @@ import FireBaseIco from "../../svg/FireBaseIco";
 import SolidityIco from "../../svg/SolidityIco";
 import MongoDbIco from "../../svg/MongoDbIco";
 import * as React from "react";
+import Web3JsIco from "../../svg/Web3Js";
 
 type ObjectField = {
   id: number;
@@ -61,5 +62,10 @@ export const skills: ObjectField[] = [
     id: 8,
     icon: (props: React.SVGProps<SVGSVGElement>) => <MongoDbIco {...props} />,
     name: "MongoDB",
+  },
+  {
+    id: 9,
+    icon: (props: React.SVGProps<SVGSVGElement>) => <Web3JsIco {...props} />,
+    name: "Web3 Js",
   },
 ];
