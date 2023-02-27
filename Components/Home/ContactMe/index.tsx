@@ -30,7 +30,7 @@ function ContactMe() {
         />
         <Links href="mailto:ayomikun204@gmail.com" name="Email" />
       </div>
-      <footer className={styles.footer}>UI by David</footer>
+      <footer className={styles.footer}>Design by David</footer>
     </section>
   );
 }
