@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "../../Components/nav/Nav";
 import styles from "../../styles/CaseStudy.module.css";
 import { skills } from "../../Components/Home/About/Skills";
+import ContactMe from "../../Components/Home/ContactMe";
 
 const SkillsComp = (props: any) => (
   <div key={props.id} className={styles.languageDiv}>
@@ -36,7 +37,7 @@ function CaseStudy() {
               <h3 className={`${styles.headingCustomFontSize} headingH3`}>
                 Overview
               </h3>
-              <hr className={`${styles.h3Hr} headingHR`} />
+              <hr className={`headingHR`} />
             </div>
             <p className={styles.overviewContent}>
               I recently used the Citi bikes in NYC. One night my wife and I
@@ -53,6 +54,96 @@ function CaseStudy() {
               <div className={styles.stackParent}>{skills.map(SkillsComp)}</div>
             </div>
           </section>
+
+          <section className={styles.overview}>
+            <div className="heading">
+              <h3 className={`${styles.headingCustomFontSize} headingH3`}>
+                Idea
+              </h3>
+              <hr className={`headingHR`} />
+            </div>
+            <p className={styles.overviewContent}>
+              I recently used the Citi bikes in NYC. One night my wife and I
+              were biking around Brooklyn and my phone died. At this point, we
+              were almost 2.5 miles from our car and it was getting late. Since
+              we couldn’t rent another bike from her phone, I ended up riding on
+              the back of her bike the whole way back. You can guess that this
+              option was not comfortable or safe but there was no way to rent
+              another bike and we didn’t want to walk.
+            </p>
+          </section>
+
+          <section className={styles.overview}>
+            <div className="heading">
+              <h3 className={`${styles.headingCustomFontSize} headingH3`}>
+                Focus Points
+              </h3>
+              <hr className={`headingHR`} />
+            </div>
+
+            <div className={styles.pointsCardContainer}>
+              <div className={styles.cardCol}>
+                <div className={styles.pointCard}>
+                  <h3>Developer experience</h3>
+                  <p>
+                    With several repetitive tasks, I wanted developers to avoid
+                    spending hours indulging in simple tasks
+                  </p>
+                </div>
+              </div>
+              <div className={styles.cardCol}>
+                <div className={styles.pointCard}>
+                  <h3>Developer experience</h3>
+                  <p>
+                    With several repetitive tasks, I wanted developers to avoid
+                    spending hours indulging in simple tasks
+                  </p>
+                </div>
+              </div>{" "}
+              <div className={styles.cardCol}>
+                <div className={styles.pointCard}>
+                  <h3>Developer experience</h3>
+                  <p>
+                    With several repetitive tasks, I wanted developers to avoid
+                    spending hours indulging in simple tasks
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className={styles.overview}>
+            <div className="heading">
+              <h3 className={`${styles.headingCustomFontSize} headingH3`}>
+                Screengrabs
+              </h3>
+              <hr className={`headingHR`} />
+            </div>
+            <div className={styles.imgDiv}>
+              <img src="/img/regal.png" alt="" />
+              <img src="/img/regal2.png" alt="" />
+            </div>
+          </section>
+
+          <section className={styles.overview}>
+            <div className="heading">
+              <h3 className={`${styles.headingCustomFontSize} headingH3`}>
+                Reflection
+              </h3>
+              <hr className={`headingHR`} />
+            </div>
+            <p className={styles.overviewContent}>
+              I recently used the Citi bikes in NYC. One night my wife and I
+              were biking around Brooklyn and my phone died. At this point, we
+              were almost 2.5 miles from our car and it was getting late. Since
+              we couldn’t rent another bike from her phone, I ended up riding on
+              the back of her bike the whole way back. You can guess that this
+              option was not comfortable or safe but there was no way to rent
+              another bike and we didn’t want to walk.
+            </p>
+          </section>
+
+          <ContactMe />
         </div>
       </div>
     </div>
