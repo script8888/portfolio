@@ -1,3 +1,9 @@
+/* MARGIN FROM HEADING  */
+.overviewContent,
+.pointsCardContainer {
+  margin-top: 17px;
+}
+
 .caseStudyContainer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)),
     url(../public/img/code.png);
@@ -23,8 +29,8 @@
   font-size: 3.3rem;
 }
 
-.h3Hr {
-  width: 73%;
+.overview {
+  margin-bottom: 7rem;
 }
 
 .overviewContent {
@@ -66,4 +72,46 @@
   width: 1.5rem;
   height: 100%;
   margin-right: 6px;
+}
+
+.pointsCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.cardCol {
+  flex-basis: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pointCard {
+  height: 100%;
+  padding: 31px 17px 27px;
+  text-align: center;
+  background: #222222;
+}
+
+.pointCard h3 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+
+.pointCard p {
+  font-weight: 300;
+  font-size: 1.15rem;
+  line-height: 24px;
+}
+
+.imgDiv {
+  margin-top: 35px;
+}
+
+.imgDiv img {
+  margin-bottom: 45px;
 }
