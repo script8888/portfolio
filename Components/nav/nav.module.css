@@ -35,6 +35,7 @@
 }
 
 .navListParent li a {
+  display: block;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -45,7 +46,11 @@
 .navListParent li a:hover {
   text-decoration-line: underline;
   color: #ffffff;
-  font-size: smaller;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 .navListParent li a svg {
@@ -54,10 +59,6 @@
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-}
-
-.navListParent li a svg:hover {
-  width: 30px;
 }
 
 /* 
