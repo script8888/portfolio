@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import HeadSection from "../Components/Home/HeadSection";
 import Projects from "../Components/Home/Projects";
 import About from "../Components/Home/About/";
-import ContactMe from "../Components/Home/ContactMe";
+import ContactMe from "../Components/ContactMe";
 
 export default function Home() {
   return (
