@@ -21,7 +21,7 @@ function HeadSection() {
 
         <div className={styles.letsTalkDiv}>
           <p>I’m currently accepting oppotunities,</p>
-          <a href="mailto:ayomikun204@gmail.com">LET’S TALK.</a>
+          <a className="hrefs" href="mailto:ayomikun204@gmail.com">LET’S TALK.</a>
         </div>
         <div className={styles.arrowDownDiv}>
           <ArrowDown />
