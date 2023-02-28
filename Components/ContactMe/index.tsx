@@ -1,4 +1,4 @@
-import { ArrowSide } from "../../svg/ArrowSide";
+import { ArrowSide } from "../svg/ArrowSide";
 import React from "react";
 import styles from "./contactme.module.css";
 
@@ -10,7 +10,7 @@ type LinksProps = {
 const Links: React.FC<LinksProps> = (props) => {
   return (
     <div className={styles.linksDiv}>
-      <a href={props.href} target="_blank" rel="noreferrer">
+      <a className="hrefs" href={props.href} target="_blank" rel="noreferrer">
         <span>{props.name}</span> <ArrowSide />
       </a>
     </div>

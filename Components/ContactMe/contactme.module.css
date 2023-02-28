@@ -1,0 +1,48 @@
+.contactMeSection {
+  margin-top: 2.5em;
+  padding-top: 4em;
+  padding-bottom: 2em;
+  background-position: center;
+  background-image: url(../../public/img/homeBg.png);
+}
+
+.contactMeSection h2 {
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 102px;
+  color: #ededed;
+  margin-bottom: 1.8rem;
+}
+
+.linksParent {
+  display: flex;
+  justify-content: center;
+}
+
+.linksDiv {
+  display: flex;
+}
+
+.linksDiv a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-right: 2.5rem;
+}
+
+.linksDiv a span {
+  margin-right: 8px;
+}
+
+.linksDiv:last-of-type a {
+  margin-right: 0;
+}
+
+.footer {
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 21px;
+  color: #fefff8;
+  text-align: center;
+  margin-top: 6rem;
+}
