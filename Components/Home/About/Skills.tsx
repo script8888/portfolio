@@ -8,6 +8,7 @@ import SolidityIco from "../../svg/SolidityIco";
 import MongoDbIco from "../../svg/MongoDbIco";
 import * as React from "react";
 import Web3JsIco from "../../svg/Web3Js";
+import BootstrapIco from "../../svg/BootstrapIco";
 
 type ObjectField = {
   id: number;
@@ -67,5 +68,10 @@ export const skills: ObjectField[] = [
     id: 9,
     icon: (props: React.SVGProps<SVGSVGElement>) => <Web3JsIco {...props} />,
     name: "Web3 Js",
+  },
+  {
+    id: 10,
+    icon: (props: React.SVGProps<SVGSVGElement>) => <BootstrapIco {...props} />,
+    name: "Bootstrap",
   },
 ];
