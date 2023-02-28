@@ -10,6 +10,8 @@ const SkillsComp = (props: any) => (
   </div>
 );
 
+const noRenderSkills = ["Bootstrap", "Web3 Js"];
+
 function About() {
   return (
     <section className={styles.aboutSection}>
@@ -46,7 +48,18 @@ function About() {
           </p>
 
           <SimpleGrid columns={{ sm: 3, md: 3, lg: 3 }} spacing={3}>
-            {skills.map(SkillsComp)}
+            {skills.map((data) => (
+              <>
+                {!noRenderSkills.includes(data.name) && (
+                  <SkillsComp
+                    name={data.name}
+                    class={data.class}
+                    key={data.id}
+                    icon={data.icon}
+                  />
+                )}
+              </>
+            ))}
           </SimpleGrid>
         </div>
         <div className={styles.enochParent}>
