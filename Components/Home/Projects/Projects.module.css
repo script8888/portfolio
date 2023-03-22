@@ -6,17 +6,35 @@
   margin-top: 3rem;
 }
 
+.projectsFlex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.projectsFlex a {
+  flex: 0 1 calc(50% - 10px);
+}
+
 .project {
   position: relative;
   border-radius: 14px;
   overflow: hidden;
+  height: 100%;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
 }
 
 .project img {
   height: 100%;
+  width: 100%;
 }
 
 .hoverDetails {
+  border-radius: 14px;
   display: flex;
   z-index: 1;
   position: absolute;
@@ -31,11 +49,15 @@
   justify-content: center;
   padding: 0 1.7em;
   opacity: 0;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
 }
 
 .project:hover .hoverDetails {
@@ -56,4 +78,10 @@
   font-size: 1rem;
   line-height: 18px;
   color: #ffffff;
+}
+
+@media (max-width: 720px) {
+  .projectsFlex a {
+    flex-basis: 100%;
+  }
 }
