@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Projects.module.css";
-import { SimpleGrid } from "@chakra-ui/react";
 import { projectDetails, projectDetailsType } from "./ProjectDetails";
 import Link from "next/link";
 
@@ -27,9 +26,7 @@ function Projects() {
       </div>
 
       <div className={styles.projects_GridParent}>
-        <SimpleGrid columns={{ sm: 1, md: 2, lg: 2 }} spacing={7}>
-          {projectDetails.map(Project)}
-        </SimpleGrid>
+        <div className={styles.projectsFlex}>{projectDetails.map(Project)}</div>
       </div>
     </section>
   );
