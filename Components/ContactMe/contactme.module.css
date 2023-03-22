@@ -20,10 +20,6 @@
   justify-content: center;
 }
 
-.linksDiv {
-  display: flex;
-}
-
 .linksDiv a {
   font-weight: 600;
   font-size: 1.4rem;
@@ -45,4 +41,50 @@
   color: #fefff8;
   text-align: center;
   margin-top: 6rem;
+}
+
+@media (max-width: 500px) {
+  .contactMeSection h2 {
+    font-size: 3.5rem;
+  }
+
+  .linksDiv a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .contactMeSection h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .linksParent {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .linksDiv {
+    flex: 50%;
+  }
+
+  .linksDiv a {
+    margin-right: 0;
+  }
+
+  .linksDiv:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 288px) {
+  .linksDiv:last-of-type {
+    margin-top: 0;
+  }
+
+  .linksDiv {
+    margin-bottom: 10px;
+  }
 }
