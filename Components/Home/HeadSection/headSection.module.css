@@ -21,8 +21,6 @@
 }
 
 .head_name_MainText {
-  font-size: 6rem;
-  line-height: 135px;
   color: #ededed;
   z-index: 1;
 }
@@ -84,6 +82,7 @@
 
 .arrowDownDiv {
   position: relative;
+  margin-top: 7em;
 }
 
 .arrowDownDiv svg {
@@ -95,8 +94,94 @@
   margin: 0 auto;
 }
 
-/* 
-  font-family: 'Aleo', serif;
-  font-family: 'Public Sans', sans-serif;
-  font-family: 'Source Code Pro', monospace; 
-  */
+@media (max-width: 857px) {
+  .head_name {
+    font-size: 5rem;
+  }
+
+  .head_name_OutlineText {
+    font-size: 5.5rem;
+    top: -24px;
+  }
+
+  .head_desc {
+    width: 39rem;
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .head_name {
+    font-size: 4rem;
+  }
+
+  .head_name_OutlineText {
+    font-size: 4.5rem;
+    top: -14px;
+  }
+
+  .head_desc {
+    width: 32rem;
+    font-size: 1.15rem;
+  }
+
+  .head_details {
+    padding-top: 7em;
+  }
+}
+
+@media (max-width: 595px) {
+  .head_name {
+    font-size: 3rem;
+  }
+
+  .head_name_OutlineText {
+    font-size: 3.2rem;
+    top: -9px;
+  }
+
+  .head_desc {
+    width: 100%;
+  }
+}
+
+@media (max-width: 442px) {
+  .head_name {
+    line-height: 48px;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+
+  .head_name_OutlineText {
+    font-size: 2.5rem;
+    top: -9px;
+  }
+
+  .head_desc {
+    width: 100%;
+  }
+  .arrowDownDiv {
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 346px) {
+  .head_name {
+    line-height: 48px;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .head_name_OutlineText {
+    font-size: 2.1rem;
+    top: -9px;
+  }
+
+  .head_desc {
+    width: 100%;
+  }
+  .arrowDownDiv {
+    margin-top: 5em;
+  }
+}
