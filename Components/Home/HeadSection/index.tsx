@@ -19,10 +19,10 @@ function HeadSection() {
           NextJs/ReactJs, JavaScript, MongoDB.
         </p>
 
-        <div className={styles.letsTalkDiv}>
+        {/* <div className={styles.letsTalkDiv}>
           <p>I’m currently accepting oppotunities,</p>
           <a className="hrefs" href="mailto:ayomikun204@gmail.com">LET’S TALK.</a>
-        </div>
+        </div> */}
         <div className={styles.arrowDownDiv}>
           <ArrowDown />
         </div>
