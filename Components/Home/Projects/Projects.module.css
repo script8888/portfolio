@@ -8,6 +8,12 @@
 
 .project {
   position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.project img {
+  height: 100%;
 }
 
 .hoverDetails {
@@ -24,6 +30,16 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 1.7em;
+  opacity: 0;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+}
+
+.project:hover .hoverDetails {
+  opacity: 1;
 }
 
 .hoverDetails h3 {
@@ -31,6 +47,7 @@
   font-size: 3rem;
   line-height: 57px;
   color: #ffffff;
+  text-transform: capitalize;
 }
 
 .hoverDetails p {
