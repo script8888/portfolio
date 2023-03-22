@@ -44,6 +44,7 @@ h2 {
   max-width: 69em;
   margin: 0 auto;
   padding: 0 33px 20px;
+  overflow-x: hidden;
 }
 
 .heading {
@@ -141,8 +142,8 @@ h2 {
   -o-transform: translate3d(0, 0, 0);
 }
 
-/* 
-font-family: 'Aleo', serif;
-font-family: 'Public Sans', sans-serif;
-font-family: 'Source Code Pro', monospace; 
-*/
+@media (max-width: 435px) {
+  .parentContainer {
+    padding: 0 26px 20px;
+  }
+}
