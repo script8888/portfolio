@@ -85,7 +85,7 @@
 
 .stackParent {
   background: #222222;
-  padding: 20px 22px;
+  padding: 0px 22px;
   display: inline-flex;
   flex-wrap: wrap;
 }
@@ -97,6 +97,7 @@
   line-height: 29px;
   display: flex;
   margin-right: 20px;
+  padding: 20px 0;
 }
 
 .languageDiv:last-of-type {
@@ -151,4 +152,40 @@
 .imgDiv img {
   margin-bottom: 45px;
   border-radius: 14px;
+}
+
+@media (max-width: 660px) {
+  .languageDiv {
+    margin-right: 16px;
+  }
+
+  .titleHeading {
+    padding-bottom: 3rem;
+  }
+
+  .headingCustomFontSize {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .headingCustomFontSize {
+    font-size: 2.3rem;
+  }
+
+  .overviewContent {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 439px) {
+  .headingCustomFontSize {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .headingCustomFontSize {
+    font-size: 1.7rem;
+  }
 }
