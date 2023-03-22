@@ -22,7 +22,7 @@ function CStudy() {
           (data) => `/CaseStudy_Images/Xjobs/xjobs${data}.png`
         )}
         title="XJobs"
-        url="https://xjobs.netlify.app"
+        url="https://xjobs.io"
       >
         {/* <section className={styles.overview}>
           <div className="heading">
