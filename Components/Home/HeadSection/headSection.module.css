@@ -1,6 +1,7 @@
 .HeadSection {
   background-image: url(../../../public/img/homeBg.png);
   background-position: center;
+  height: 100vh;
 }
 
 .head_details {
@@ -124,10 +125,6 @@
   .head_desc {
     width: 32rem;
     font-size: 1.15rem;
-  }
-
-  .head_details {
-    padding-top: 7em;
   }
 }
 
