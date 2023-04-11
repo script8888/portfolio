@@ -1,5 +1,5 @@
 export type projectDetailsType = {
-	id?: number;
+	id: number;
 	img: string;
 	title: string;
 	description: string;
