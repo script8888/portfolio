@@ -1,184 +1,224 @@
 .HeadSection {
-  background-image: url(../../../public/img/homeBg.png);
-  background-position: center;
-  height: 100vh;
-}
-
-.head_details {
-  padding-top: 10em;
-  padding-bottom: 10em;
-}
-
-.head_name {
-  font-family: "Public Sans", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 6rem;
-  line-height: 135px;
-  display: flex;
-  text-align: center;
-  position: relative;
-  justify-content: center;
-}
-
-.head_name_MainText {
-  color: #ededed;
-  z-index: 1;
-}
-
-.head_name_OutlineText {
-  position: absolute;
-  top: -31px;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 0;
-  color: transparent;
-  font-size: 6.5rem;
-  -webkit-text-stroke: 1px #717171;
+	background-image: url(../../../public/img/homeBg.png);
+	background-position: center;
+	height: 100vh;
 }
 
 .head_desc {
-  width: 46rem;
-  font-family: "Public Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 41px;
-  text-align: center;
-  margin: 0 auto;
+	opacity: 0; /* Hide the text initially */
+	animation: fade-in 2s forwards;
+	animation-delay: 0.7s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.arrowDownDiv svg {
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+}
+
+.head_details {
+	padding-top: 14em;
+	padding-bottom: 10em;
+}
+
+.head_name {
+	font-family: "Public Sans", sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 6rem;
+	line-height: 135px;
+	display: flex;
+	text-align: center;
+	position: relative;
+	justify-content: center;
+}
+
+.head_name_MainText {
+	color: #ededed;
+	z-index: 1;
+}
+
+.head_name_OutlineText {
+	position: absolute;
+	top: -31px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 0;
+	color: transparent;
+	font-size: 6.5rem;
+	-webkit-text-stroke: 1px #717171;
+}
+
+.head_desc {
+	width: 46rem;
+	font-family: "Public Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 41px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 .letsTalkDiv {
-  padding-top: 3em;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
+	padding-top: 3em;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
 }
 
 .letsTalkDiv p,
 .letsTalkDiv a {
-  font-family: "Public Sans", sans-serif;
-  font-style: normal;
+	font-family: "Public Sans", sans-serif;
+	font-style: normal;
 }
 
 .letsTalkDiv p {
-  width: 18.5rem;
-  font-weight: 300;
-  font-size: 1.3rem;
-  line-height: 30px;
-  text-align: right;
-  color: #c3c3c3;
-  padding-bottom: 12px;
+	width: 18.5rem;
+	font-weight: 300;
+	font-size: 1.3rem;
+	line-height: 30px;
+	text-align: right;
+	color: #c3c3c3;
+	padding-bottom: 12px;
 }
 
 .letsTalkDiv a {
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 143%;
-  text-align: center;
-  color: #c3c3c3;
-  position: relative;
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 143%;
+	text-align: center;
+	color: #c3c3c3;
+	position: relative;
 }
 
 .arrowDownDiv {
-  position: relative;
-  margin-top: 7em;
+	position: relative;
+	margin-top: 7em;
 }
 
 .arrowDownDiv svg {
-  cursor: pointer;
-  position: absolute;
-  top: -1em;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+	cursor: pointer;
+	position: absolute;
+	top: -1em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 @media (max-width: 857px) {
-  .head_name {
-    font-size: 5rem;
-  }
+	.head_name {
+		font-size: 5rem;
+	}
 
-  .head_name_OutlineText {
-    font-size: 5.5rem;
-    top: -24px;
-  }
+	.head_name_OutlineText {
+		font-size: 5.5rem;
+		top: -24px;
+	}
 
-  .head_desc {
-    width: 39rem;
-    font-size: 1.2rem;
-    line-height: 30px;
-  }
+	.head_desc {
+		width: 39rem;
+		font-size: 1.2rem;
+		line-height: 30px;
+	}
 }
 
 @media (max-width: 767px) {
-  .head_name {
-    font-size: 4rem;
-  }
+	.head_details {
+		padding-top: 12em;
+	}
 
-  .head_name_OutlineText {
-    font-size: 4.5rem;
-    top: -14px;
-  }
+	.arrowDownDiv {
+		margin-top: 6em;
+	}
 
-  .head_desc {
-    width: 32rem;
-    font-size: 1.15rem;
-  }
+	.head_name {
+		font-size: 4rem;
+		line-height: 87px;
+	}
+
+	.head_name_OutlineText {
+		font-size: 4.5rem;
+		top: -14px;
+	}
+
+	.head_desc {
+		width: 32rem;
+		font-size: 1.15rem;
+	}
 }
 
 @media (max-width: 595px) {
-  .head_name {
-    font-size: 3rem;
-  }
+	.head_name {
+		font-size: 3rem;
+		line-height: 60px;
+	}
 
-  .head_name_OutlineText {
-    font-size: 3.2rem;
-    top: -9px;
-  }
+	.head_name_OutlineText {
+		font-size: 3.2rem;
+		top: -9px;
+	}
 
-  .head_desc {
-    width: 100%;
-  }
+	.head_desc {
+		width: 100%;
+	}
 }
 
 @media (max-width: 442px) {
-  .head_name {
-    line-height: 48px;
-    font-size: 2.4rem;
-    margin-bottom: 30px;
-  }
+	.head_name {
+		line-height: 20px;
+		font-size: 2.7rem;
+		margin-bottom: 30px;
+	}
 
-  .head_name_OutlineText {
-    font-size: 2.5rem;
-    top: -9px;
-  }
+	.head_name_OutlineText {
+		font-size: 2.8rem;
+		top: -9px;
+	}
 
-  .head_desc {
-    width: 100%;
-  }
-  .arrowDownDiv {
-    margin-top: 5em;
-  }
+	.head_desc {
+		width: 100%;
+	}
+	.arrowDownDiv {
+		margin-top: 5em;
+	}
 }
 
-@media (max-width: 346px) {
-  .head_name {
-    line-height: 48px;
-    font-size: 2.2rem;
-    margin-bottom: 30px;
-  }
+@media (max-width: 382px) {
+	.head_name {
+		font-size: 2.2rem;
+		margin-bottom: 30px;
+	}
 
-  .head_name_OutlineText {
-    font-size: 2.1rem;
-    top: -9px;
-  }
+	.head_name_OutlineText {
+		font-size: 2.1rem;
+		top: -9px;
+	}
 
-  .head_desc {
-    width: 100%;
-  }
-  .arrowDownDiv {
-    margin-top: 5em;
-  }
+	.head_desc {
+		width: 100%;
+	}
+	.arrowDownDiv {
+		margin-top: 5em;
+	}
 }
