@@ -112,17 +112,12 @@
 
 .pointsCardContainer {
   display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: stretch;
   flex-direction: column;
+  gap: 16px;
 }
 
 .cardCol {
-  flex-basis: 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
+  
 }
 
 .pointCard {
