@@ -266,6 +266,11 @@
     "@typescript-eslint/types" "5.49.0"
     eslint-visitor-keys "^3.3.0"
 
+"@usermaven/sdk-js@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@usermaven/sdk-js/-/sdk-js-1.2.1.tgz#9cce3ca1f4b7186e0cec8499b4091d3d4ada8c8f"
+  integrity sha512-2FjyBaCyzbiWebz0SQ0hU+PbH//Kt7BjU7wYcrwTqNy64rLiMprr8kk0T5tBoyVatjHIbMmFV5RdGAshYGH7SA==
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz#7ed5bb55908b3b2f1bc55c6af1653bada7f07937"
