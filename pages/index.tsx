@@ -11,7 +11,7 @@ import useUserMaven from "../hooks/useUserMaven";
 export default function Home() {
 	const usermaven = useUserMaven();
 	useEffect(() => {
-		usermaven?.track("loaded", {
+		usermaven?.track("loaded2", {
 			date: "lalalalal",
 		});
 	}, [usermaven]);
