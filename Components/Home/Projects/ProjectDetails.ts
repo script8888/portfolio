@@ -1,9 +1,12 @@
+import { UsermavenClient } from "@usermaven/sdk-js";
+
 export type projectDetailsType = {
 	id: number;
 	img: string;
 	title: string;
 	description: string;
 	url?: string;
+	usermaven?: UsermavenClient | null;
 };
 
 export const projectDetails: projectDetailsType[] = [

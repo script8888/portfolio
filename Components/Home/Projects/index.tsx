@@ -10,7 +10,9 @@ const Project = (props: projectDetailsType) => {
 		<Link
 			target={props.url ? "_blank" : "_self"}
 			href={props.url ? props.url : `/case-study/${props.title.toLowerCase()}`}
-			onClick={() => {}}
+			onClick={() => {
+				props.usermaven?.track(`clicked_${props.title}`);
+			}}
 		>
 			<motion.div
 				initial={{ opacity: 0, scale: 0.9 }}
@@ -57,7 +59,19 @@ function Projects() {
 			</div>
 
 			<div className={styles.projects_GridParent}>
-				<div className={styles.projectsFlex}>{projectDetails.map(Project)}</div>
+				<div className={styles.projectsFlex}>
+					{projectDetails.map((data) => (
+						<Project
+							key={data.id}
+							description={data.description}
+							img={data.img}
+							title={data.title}
+							url={data.url}
+							id={data.id}
+							usermaven={usermaven}
+						/>
+					))}
+				</div>
 			</div>
 		</section>
 	);
