@@ -5,16 +5,8 @@ import Projects from "../Components/Home/Projects";
 import About from "../Components/Home/About/";
 import ContactMe from "../Components/ContactMe";
 import Script from "next/script";
-import { useEffect } from "react";
-import useUserMaven from "../hooks/useUserMaven";
 
 export default function Home() {
-	const usermaven = useUserMaven();
-	useEffect(() => {
-		usermaven?.track("loaded", {
-			date: "lalalalal",
-		});
-	}, [usermaven]);
 	return (
 		<div className={styles.container}>
 			<Script id="hotjar" strategy="afterInteractive">
