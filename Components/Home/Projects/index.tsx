@@ -3,12 +3,15 @@ import styles from "./Projects.module.css";
 import { projectDetails, projectDetailsType } from "./ProjectDetails";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import useUserMaven from "../../../hooks/useUserMaven";
 
 const Project = (props: projectDetailsType) => {
+	const usermaven = useUserMaven();
 	return (
 		<Link
 			target={props.url ? "_blank" : "_self"}
 			href={props.url ? props.url : `/case-study/${props.title.toLowerCase()}`}
+			onClick={() => {}}
 		>
 			<motion.div
 				initial={{ opacity: 0, scale: 0.9 }}
