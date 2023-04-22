@@ -34,5 +34,6 @@ export const projectDetails: projectDetailsType[] = [
 		img: "/projects/verigo.jpeg",
 		title: "Verigo",
 		description: `Verigo is a company that offers courier/logistics digital solutions for individuals and enterprises in Nigeria and throughout Africa.`,
+		url: "https://verigo.netlify.app/",
 	},
 ];
