@@ -11,7 +11,7 @@ const Project = (props: projectDetailsType) => {
 			target={props.url ? "_blank" : "_self"}
 			href={props.url ? props.url : `/case-study/${props.title.toLowerCase()}`}
 			onClick={() => {
-				props.usermaven?.track(`clicked_${props.title}`, {});
+				props.usermaven?.track(`clicked_${props.title.toLowerCase()}`, {});
 			}}
 		>
 			<motion.div
