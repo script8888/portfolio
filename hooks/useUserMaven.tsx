@@ -6,7 +6,7 @@ const useUserMaven = () => {
 	useEffect(() => {
 		// Initialize UsermavenClient when component mounts
 		const usermavenInstance: UsermavenClient = usermavenClient({
-			key: process.env.NEXT_PUBLIC_USERMAVEN_KEY as string,
+			key: "UMstZZfOHf",
 			tracking_host: "https://events.usermaven.com",
 		});
 

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import useUserMaven from "../../../hooks/useUserMaven";
 
 const Project = (props: projectDetailsType) => {
-	const usermaven = useUserMaven();
 	return (
 		<Link
 			target={props.url ? "_blank" : "_self"}
@@ -35,6 +34,7 @@ const Project = (props: projectDetailsType) => {
 };
 
 function Projects() {
+	const usermaven = useUserMaven();
 	return (
 		<section id="projects" className={styles.projectsSection}>
 			<div className="heading">
