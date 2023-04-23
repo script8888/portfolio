@@ -46,9 +46,6 @@ function Projects() {
 					transition={{ delay: 0.4, duration: 0.8, type: "tween" }}
 					viewport={{ once: true, amount: 0.7 }}
 					className="headingH3"
-					onClick={() => {
-						usermaven?.track("some_things_ive_built", {});
-					}}
 				>
 					Some Things I’ve Built
 				</motion.h3>
