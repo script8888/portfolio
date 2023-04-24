@@ -23,7 +23,7 @@ function ContactMe() {
       <h2>Contact Me</h2>
 
       <div className={styles.linksParent}>
-        <Links href="https://twitter.com/frontend_script" name="Twitter" />
+        <Links href="https://github.com/script8888" name="GitHub" />
         <Links
           href="https://linkedin.com/in/enoch-fabiyi-bb04331a5/"
           name="LinkedIn"
