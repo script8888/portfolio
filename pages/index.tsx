@@ -30,6 +30,14 @@ export default function Home() {
           content="Experienced Frontend Web Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:image" content={"/ogImage.png"} />
+        <meta property="og:title" content={"Enoch Fabiyi - Portfolio"} />
+        <meta
+          property="og:description"
+          content="Experienced Frontend Web Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
+        />
+        <meta property="og:url" content={`https://enochfabiyi.dev`} />
+        <meta property="og:type" content="website" />
       </Head>
 
       <div className="parentContainer">
