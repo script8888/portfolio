@@ -34,7 +34,7 @@ function CStudy() {
         <meta property="og:title" content={"Case Study - XJobs"} />
         <meta
           property="og:description"
-          content="Experienced Frontend Web Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
+          content="Experienced Fullstack Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
         />
         <meta
           property="og:url"
