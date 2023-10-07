@@ -46,12 +46,12 @@ export const skills: ObjectField[] = [
     icon: (props: React.SVGProps<SVGSVGElement>) => <ReduxIco {...props} />,
     name: "Redux",
   },
-  {
-    id: 7,
-    icon: (props: React.SVGProps<SVGSVGElement>) => <SolidityIco {...props} />,
-    name: "Solidity",
-    class: `solidityIco`,
-  },
+  // {
+  //   id: 7,
+  //   icon: (props: React.SVGProps<SVGSVGElement>) => <SolidityIco {...props} />,
+  //   name: "Solidity",
+  //   class: `solidityIco`,
+  // },
   {
     id: 2,
     icon: (props: React.SVGProps<SVGSVGElement>) => (
