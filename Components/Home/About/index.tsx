@@ -43,7 +43,7 @@ function About() {
 				>
 					<p>
 						Hi there! I&apos;m Enoch and I love creating responsive and
-						user-friendly websites. I&apos;ve been focusing on web
+						user-friendly websites. I&apos;ve been focusing on fullstack
 						development for a few years now. It all started back in 2018 when I
 						was tinkering with Blogger and trying to understand how blogs were
 						made. That curiosity led me to learn HTML/CSS and I&apos;ve been
