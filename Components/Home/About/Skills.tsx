@@ -60,17 +60,17 @@ export const skills: ObjectField[] = [
     name: "TypeScript",
   },
   {
-    id: 8,
+    id: 7,
     icon: (props: React.SVGProps<SVGSVGElement>) => <MongoDbIco {...props} />,
     name: "MongoDB",
   },
   {
-    id: 9,
+    id: 8,
     icon: (props: React.SVGProps<SVGSVGElement>) => <Web3JsIco {...props} />,
     name: "Web3 Js",
   },
   {
-    id: 10,
+    id: 9,
     icon: (props: React.SVGProps<SVGSVGElement>) => <BootstrapIco {...props} />,
     name: "Bootstrap",
   },
