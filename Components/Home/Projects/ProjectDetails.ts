@@ -20,7 +20,7 @@ export const projectDetails: projectDetailsType[] = [
 		id: 2,
 		img: "/projects/jerrysview.png",
 		title: "JerrysView",
-		description: `Verigo is a company that offers courier/logistics digital solutions for individuals and enterprises in Nigeria and throughout Africa.`,
+		description: `Landing page for a multi-business agency.`,
 		url: "https://jerrysview.com",
 	},
 	{
