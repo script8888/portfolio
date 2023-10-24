@@ -6,6 +6,8 @@ import About from "../Components/Home/About/";
 import ContactMe from "../Components/ContactMe";
 import Script from "next/script";
 
+export const metaContent =
+  "Experienced Developer on deck to deliver solutions using React, NextJs, TypeScript, Javascript, Firebase, and MongoDB.";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -25,17 +27,11 @@ export default function Home() {
       </Script>
       <Head>
         <title>Enoch Fabiyi</title>
-        <meta
-          name="description"
-          content="Experienced Fullstack Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
-        />
+        <meta name="description" content={metaContent} />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content={"/ogImage.png"} />
         <meta property="og:title" content={"Enoch Fabiyi - Portfolio"} />
-        <meta
-          property="og:description"
-          content="Experienced Fullstack Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
-        />
+        <meta property="og:description" content={metaContent} />
         <meta property="og:url" content={`https://enochfabiyi.dev`} />
         <meta property="og:type" content="website" />
       </Head>

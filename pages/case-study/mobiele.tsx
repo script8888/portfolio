@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../styles/CaseStudy.module.css";
 import CaseStudy from "../../Components/CaseStudy";
 import Script from "next/script";
+import { metaContent } from "..";
 
 const imageMapper: Array<string> = [1, 2, 3, 4, 5].map(
   (data) => `/CaseStudy_Images/Mobiele/mobiele${data}.png`
@@ -44,10 +45,7 @@ function CStudy() {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content={"/ogImage.png"} />
         <meta property="og:title" content={"Case Study - Mobiele"} />
-        <meta
-          property="og:description"
-          content="Experienced Frontend Web Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
-        />
+        <meta property="og:description" content={metaContent} />
         <meta
           property="og:url"
           content={`https://enochfabiyi.dev/case-study/mobiele`}

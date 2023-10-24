@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../../styles/CaseStudy.module.css";
 import CaseStudy from "../../Components/CaseStudy";
 import Script from "next/script";
+import { metaContent } from "..";
 
 const data = [1, 2, 4, 5, 6];
 
@@ -32,10 +33,7 @@ function CStudy() {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:image" content={"/ogImage.png"} />
         <meta property="og:title" content={"Case Study - XJobs"} />
-        <meta
-          property="og:description"
-          content="Experienced Fullstack Developer with 3+ years of expertise in building dynamic and user-friendly web applications using NextJs/ReactJs, JavaScript, MongoDB."
-        />
+        <meta property="og:description" content={metaContent} />
         <meta
           property="og:url"
           content={`https://enochfabiyi.dev/case-study/xjobs`}
