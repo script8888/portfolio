@@ -7,7 +7,7 @@ import ContactMe from "../Components/ContactMe";
 import Script from "next/script";
 
 export const metaContent =
-  "Experienced Developer on deck to deliver solutions using React, NextJs, TypeScript, Javascript, Firebase, and MongoDB.";
+  "Experienced Developer, delivering solutions using React, NextJs, TypeScript, Javascript, Firebase, and MongoDB.";
 export default function Home() {
   return (
     <div className={styles.container}>

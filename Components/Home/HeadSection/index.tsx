@@ -21,7 +21,7 @@ function HeadSection() {
           <span className={styles.head_name_OutlineText}>ENOCH FABIYI</span>
         </motion.h3>
         <p className={styles.head_desc}>
-          Experienced Developer on deck to deliver solutions using React,
+          Experienced Developer, delivering solutions using React,
           NextJs, TypeScript, Javascript, Firebase, and MongoDB.
         </p>
 
