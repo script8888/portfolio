@@ -1,7 +1,7 @@
 .HeadSection {
 	background-image: url(../../../public/img/homeBg.png);
 	background-position: center;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .head_desc {
@@ -36,7 +36,7 @@
 }
 
 .head_details {
-	padding-top: 14em;
+	padding-top: 10em;
 	padding-bottom: 10em;
 }
 

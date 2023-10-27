@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "./about.module.css";
 import { skills } from "./Skills";
 import { motion } from "framer-motion";
@@ -68,16 +68,15 @@ function About() {
 
           <div className={styles.skillsFlex}>
             {skills.map((data) => (
-              <>
+              <Fragment key={data.id}>
                 {!noRenderSkills.includes(data.name) && (
                   <SkillsComp
                     name={data.name}
                     class={data.class}
-                    key={data.id}
                     icon={data.icon}
                   />
                 )}
-              </>
+              </Fragment>
             ))}
           </div>
         </motion.div>
