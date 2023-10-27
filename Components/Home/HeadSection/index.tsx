@@ -14,15 +14,15 @@ function HeadSection() {
         <motion.h3
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.8, type: "tween" }}
+          transition={{ delay: 0.3, duration: 0.5, type: "tween" }}
           className={styles.head_name}
         >
           <span className={styles.head_name_MainText}>ENOCH FABIYI</span>{" "}
           <span className={styles.head_name_OutlineText}>ENOCH FABIYI</span>
         </motion.h3>
         <p className={styles.head_desc}>
-          Experienced Developer, delivering solutions using React,
-          NextJs, TypeScript, Javascript, Firebase, and MongoDB.
+          Experienced Developer, delivering solutions using React, NextJs,
+          TypeScript, Javascript, Firebase, and MongoDB.
         </p>
 
         <div className={styles.arrowDownDiv}>

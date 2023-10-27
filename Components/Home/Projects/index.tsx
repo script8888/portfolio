@@ -18,8 +18,8 @@ const Project = (props: projectDetailsType) => {
 				initial={{ opacity: 0, scale: 0.9 }}
 				whileInView={{ opacity: 1, scale: 1 }}
 				transition={{
-					delay: props.id ? 0.5 + props.id * 0.17 : 0.5,
-					duration: 1.5,
+					delay: props.id ? 0.2 + props.id * 0.17 : 0.2,
+					duration: 0.7,
 					type: "tween",
 				}}
 				viewport={{ once: true, amount: 0.7 }}
@@ -43,7 +43,7 @@ function Projects() {
 				<motion.h3
 					initial={{ opacity: 0, x: -20 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ delay: 0.4, duration: 0.8, type: "tween" }}
+					transition={{ delay: 0.3, duration: 0.7, type: "tween" }}
 					viewport={{ once: true, amount: 0.7 }}
 					className="headingH3"
 				>
@@ -52,7 +52,7 @@ function Projects() {
 				<motion.hr
 					initial={{ opacity: 0, x: 15 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ delay: 0.5, duration: 1, type: "tween" }}
+					transition={{ delay: 0.4, duration: 0.7, type: "tween" }}
 					viewport={{ once: true, amount: 0.7 }}
 					className={`headingHR`}
 				/>
